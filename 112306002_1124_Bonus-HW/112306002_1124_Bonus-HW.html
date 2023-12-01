@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1124_Bonus-HW</title>
+  <style>
+   
+  body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  text-align: center;
+}
+
+.form-container {
+  width: 60%;
+  margin: 3% auto;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-input {
+  flex: 1;
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+}
+
+.form-input label {
+  display: inline-block;
+  margin-right: 0.25%;
+  width: 80px; 
+}
+
+.form-input input,
+.form-input textarea {
+  width: calc(100% - 170px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+#input1,
+#input2,
+#input3,
+#input4 {
+  color: #979696;
+}
+
+#input4{
+  width: 60%;
+}
+
+#textarea {
+  resize: none;
+}
+
+#textarea::placeholder {
+  color: rgb(105, 102, 102);
+}
+
+.form-picture {
+  float: right;
+  margin-right: 2.5%;
+}
+
+.form-picture label {
+  display: inline-block;
+  margin-right: 0.5%;
+  width: 9.75%;
+}
+
+.form-picture img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1.5%;
+  vertical-align: middle;
+  width: 82%;
+}
+
+
+  </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-input">
+          <label for="input1">input1</label>
+          <input type="text" id="input1" name="input1" value="input1">
+        </div>
+    
+        <div class=" form-row">
+         <div class="form-input">
+          <label for="input2">input2</label>
+          <input type="text" id="input2" name="input2" value="input2">
+         </div>
+    
+         <div class="form-input">
+          <label for="input3">input3</label>
+          <input type="text" id="input3" name="input3" value="input3">
+         </div>
+        </div>
+
+        <div class="form-input">
+          <label for="input4">input4</label>
+          <input type="text" id="input4" name="input4" value="input4">
+        </div>
+    
+        <div class="form-input">
+          <label for="textarea">textarea</label>
+          <textarea id="textarea" name="textarea" rows="4" placeholder="make it not resizable"></textarea>
+        </div>
+    
+        <div class="form-input form-picture">
+          <label for="picture1">picture1</label>
+          <img src="Picture1.jpeg" alt="Picture 1">
+        </div>
+      </div>
+    
+    </body>
+    </html>
